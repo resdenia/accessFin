@@ -1,0 +1,8 @@
+.UserSelect {
+    display: flex;
+    margin: auto;
+    position: relative;
+    width: 450px;
+    position: relative;
+    justify-content: flex-end;
+}
