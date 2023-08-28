@@ -1,4 +1,4 @@
-.dropdownList {
+.DropdownList {
     list-style: none;
     border: 1px solid var(--black200);
     padding: 10px 0px 0px 0px;
@@ -11,7 +11,7 @@
     display: none;
     flex-direction: column;
 }
-.dropdownList.open {
+.DropdownList.open {
     display: flex;
     max-height: 345px;
     overflow: scroll;

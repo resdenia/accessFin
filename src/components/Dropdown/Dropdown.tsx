@@ -1,9 +1,7 @@
 import React, {
-    memo,
     useLayoutEffect,
     useRef,
     useState,
-    FC,
 } from 'react';
 import cls from './Dropdown.module.css';
 import { MoreIcon } from '../MoreIcon/Icon';
@@ -80,6 +78,7 @@ const Dropdown = (props: IDropdown) => {
     return (
         <>
             <div
+                data-testid="dropdownBtn"
                 className={cls.IconWrapper}
                 ref={ref}
                 onClick={onOpen}
@@ -91,10 +90,11 @@ const Dropdown = (props: IDropdown) => {
                 />
             </div>
             <div
+                data-testid="dropdownWrapper"
                 className={`${
                     openDropDown
-                        ? `${cls.dropdownList} ${cls.open}`
-                        : cls.dropdownList
+                        ? `${cls.DropdownList} ${cls.open}`
+                        : cls.DropdownList
                 }`}
             >
                 {renderOptions()}
